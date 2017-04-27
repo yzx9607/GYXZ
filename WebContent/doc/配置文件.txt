@@ -1,0 +1,36 @@
+						河南工学院教师薪资管理查询系统 v1.0版本配置须知        
+								——开发人：杨振欣  2016年3月23号
+1.导入数据库文件doc目录下的gyxz.sql文件
+	导入薪资表以及数据库结构						
+2.配置系统时，第一要修改jdbc.properties文件内容
+	将系统所要搭建的mysql数据库的配置文件进行修改
+	url=jdbc:mysql://127.0.0.1:3306/gyxz?useUnicode=true&characterEncoding=utf-8   
+	//系统所搭建的mysql环境配置gyxz代表数据库名，ip为要使用的myusql所属地址
+	driverclass=com.mysql.jdbc.Driver
+	//数据库驱动，一般不做修改
+	name=root
+	//系统超级用户名
+	password=123456
+	//密码
+	size=20
+	//文件初始值创建的连接数
+	
+3.配置自己需要的日志路径  将log4j.properties文件进行配置修改
+	log4j.rootLogger=debug,gyxz
+	//名字可以自己修改，不建议修改
+	log4j.appender.gyxz=org.apache.log4j.FileAppender
+	//打印到文件，不做修改，调试可更改为控制台
+	log4j.appender.gyxz.layout=org.apache.log4j.PatternLayout
+	
+	log4j.appender.gyxz.layout.ConversionPattern=%d{yyyy\u5E74MM\u6708dd\u65E5 HH\u65F6mm\u5206ss\u79D2\uFF1A}%m%l%n
+	
+	log4j.appender.gyxz.File=D://gyxzlog/gyxz.log
+	//指定系统日志的文件名以及地址，建议文件名.log
+4.默认管理员账号密码为
+	用户名：admin
+	密码：admin123
+5.预留管理员密码为
+	用户名：superadmin
+	密码：admin123
+6.前台教师注册后，如不能查看自己薪资，请核对教师身份证号和真实姓名（教师信息表和教师登录表中），不相同则不能查看
+7.如管理员密码忘记，请自行查看日志文件或者查看数据库表 admin
