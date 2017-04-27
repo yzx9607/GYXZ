@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="GYXZ">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <dependent-module archiveName="commons-collections.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/commons-collections/commons-collections">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-collections-3.2.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/commons-collections-3.2/commons-collections-3.2">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jspsmartupload.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/jspsmartupload/jspsmartupload">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-beanutils-1.7.0.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/commons-beanutils-1.7.0/commons-beanutils-1.7.0">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-logging-1.0.4.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/commons-logging-1.0.4/commons-logging-1.0.4">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ezmorph-1.0.3.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/ezmorph-1.0.3/ezmorph-1.0.3">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-lang-2.4.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/commons-lang-2.4/commons-lang-2.4">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mysql-connector-java-5.0.8-bin.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/mysql-connector-java-5.0.8-bin/mysql-connector-java-5.0.8-bin">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="json-lib-2.2.3-jdk15.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/json-lib-2.2.3-jdk15/json-lib-2.2.3-jdk15">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-httpclient-3.0.1.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/commons-httpclient-3.0.1/commons-httpclient-3.0.1">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="GYXZ"/>
+        <property name="java-output-path" value="/GYXZ/build/classes"/>
+    </wb-module>
+</project-modules>
